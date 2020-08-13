@@ -32,6 +32,8 @@ body
 {
 	min-height: 100vh;
 	background-image: url(https://areademulher.r7.com/wp-content/uploads/2020/03/alimentos-que-melhoram-a-pele-8-exemplos-saudaveis-e-saborosos-4.jpg);
+	background-repeat: no-repeat;
+  	background-size: auto;
 }
 
 .login
