@@ -3,22 +3,21 @@
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
-	font-family: monospace;
+	font-family: Luizinho;
 	box-sizing: border-box;
 }
 
-.josuke
-{
-	width: 100%;
-  	height: 100px;
+@font-face {
+  	font-family: Luizinho;
+  	src: url(Butler_Regular.otf);
 }
 
 body
 {
 	min-height: 100vh;
-	background-image: url(https://i.imgur.com/ElMeeQZ.jpg);
+	background-image: url(https://i.imgur.com/nspYadu.png);
 	background-repeat: no-repeat;
-  	background-size: auto;
+  	background-size: cover;
 }
 
 .login
@@ -29,8 +28,8 @@ body
   padding: 80px 40px;
   border-radius: 10px;
   position: absolute;
-  right: 5%;
-  top: 50%;
+  left: 85%;
+  top: 35%;
   transform: translate(-50%,-50%);
 }
 
