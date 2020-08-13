@@ -7,6 +7,27 @@
 	box-sizing: border-box;
 }
 
+.josuke
+{
+	width: 100%;
+  	height: 100px;
+}
+
+.dumbell1
+{
+	width: auto;
+	height: auto;
+}
+
+.dumbell2
+{
+	text-orientation: right;
+	width: auto;
+	height: auto;
+	border-left: 0;
+	border-bottom: 0;
+}
+
 body
 {
 	min-height: 100vh;
