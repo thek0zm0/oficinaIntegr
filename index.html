@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Healthy Foods</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- login básico -->
+
+	<form action="index.html" class="login">
+		<h1>Login</h1>
+
+		<div class="txtb">
+			<input type="text">
+			<span data-placeholder="Usuário"></span>
+		</div>
+
+		<div class="txtb">
+			<input type="password">
+			<span data-placeholder="Senha"></span>
+		</div>
+
+		<input type="submit" class="logbtn" value="Login">
+
+		<div class="bottom-text">
+			Não possui conta?
+			<a href="#">Inscrever-se</a>
+		</div>
+		
+	</form>
+
+	<script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+     </script>
+
+</body>
+</html>
