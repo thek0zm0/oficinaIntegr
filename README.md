@@ -1,6 +1,7 @@
 # oficinaIntegr
 Arquivos, oficina de integração 2020 
 
-Grupo: Mateuszinho VK2020 \n
-       xx LuizTheBoi xx   \n
-       Lukinhas the_K0ZM0LL_
+## Grupo
+<p>Matheuzin ninja123 VK2020</p>
+<p>Lukinhas FaZe Clan MLG K0ZM0LL</p>
+<p>Luizito _elChapoX420_</p>
