@@ -12,8 +12,22 @@
 
 </head>
 <body>
+    <!--
+        Página de restrido de usuário
+    -->
+
+    <!---->
     <div class="container-fluid">
         <form>
+          <!--
+              Formulários advindos do bootstrap;
+              Col-md-6 significa o tamanho da tela que este elemento irá ocupar;
+              Tamanho máximo para md é 12, logo 6 é metade ... ;
+              Assim, fica fácil manipular o quanto da página cada barra ocupa;
+              Usando esta funcionalidade, conseguimos garantir que o site seja responsivo;
+              Programadores profissionais possivelmente não utilizariam bootstrap;
+          -->
+          <!-- Nome e Nascimento -->
           <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputNome">Nome</label>
@@ -24,6 +38,7 @@
                     <input type="date" class="form-control" value="2000-01-01" id="inputData" placeholder="Data">
                 </div>
              </div>
+         <!-- Email e Senha -->
          <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputEmail">Email</label>
@@ -34,6 +49,7 @@
               <input type="password" class="form-control" id="inputSenha" placeholder="Senha">
             </div>
          </div>
+         <!-- Rua, bairro, Cidade, Cep -->
           <div class="form-group">
             <label for="inputRua">Rua</label>
             <input type="text" class="form-control" id="inputRua" placeholder="Avenida Zezinho">
@@ -59,6 +75,7 @@
              <input type="text" class="form-control" id="inputCEP">
              </div>
          </div>
+         <!-- O botão submit ainda não funciona pois não temos backend neste momento -->
          <button type="submit" class="btn btn-primary">Registre-se</button>
          <a href="decision.html">quebragalhinho</a>
         </form>
