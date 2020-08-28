@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Luizinho;
+    src: url(../font/Butler_Regular.otf);
+}
+
+body
+{
+    /* The image used */
+    background-image: url("https://img.pngio.com/food-background-images-94-images-in-co-381169-png-images-pngio-food-background-png-1440_619.png");
+
+    /* Half height */
+       height: 100%;
+       width: 100%;
+  
+    /* Center and scale the image nicely */
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+}
+
+h3
+{
+    font-family: Luizinho;
+}
+
+.row
+{
+    height: 700px;
+}
+
+.btn-sample { 
+    color: #000000; 
+    background-color: #8FFC97; 
+    border-color: #00FF33; 
+  } 
+   
+  .btn-sample:hover, 
+  .btn-sample:focus, 
+  .btn-sample:active, 
+  .btn-sample.active, 
+  .open .dropdown-toggle.btn-sample { 
+    color: #000000; 
+    background-color: #38AD38; 
+    border-color: #00FF33; 
+  } 
+   
+  .btn-sample:active, 
+  .btn-sample.active, 
+  .open .dropdown-toggle.btn-sample { 
+    background-image: none; 
+  } 
+   
+  .btn-sample.disabled, 
+  .btn-sample[disabled], 
+  fieldset[disabled] .btn-sample, 
+  .btn-sample.disabled:hover, 
+  .btn-sample[disabled]:hover, 
+  fieldset[disabled] .btn-sample:hover, 
+  .btn-sample.disabled:focus, 
+  .btn-sample[disabled]:focus, 
+  fieldset[disabled] .btn-sample:focus, 
+  .btn-sample.disabled:active, 
+  .btn-sample[disabled]:active, 
+  fieldset[disabled] .btn-sample:active, 
+  .btn-sample.disabled.active, 
+  .btn-sample[disabled].active, 
+  fieldset[disabled] .btn-sample.active { 
+    background-color: #8FFC97; 
+    border-color: #00FF33; 
+  } 
+   
+  .btn-sample .badge { 
+    color: #8FFC97; 
+    background-color: #000000; 
+  }
