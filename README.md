@@ -6,5 +6,5 @@ Arquivos, oficina de integração 2020
 <p>Lukinhas FaZe Clan MLG K0ZM0LL</p>
 <p>Luizito _elChapoX420_</p>
 
-![](img/bubbles)
+![](img/bubbles.gif)
 
