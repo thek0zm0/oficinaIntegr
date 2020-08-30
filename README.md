@@ -8,3 +8,6 @@ Arquivos, oficina de integração 2020
 
 <<<<<<< Updated upstream
 ![Alt text](https://imgur.com/WLR0QL2)
+=======
+![](img/bubbles)
+>>>>>>> Stashed changes
