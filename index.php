@@ -8,22 +8,22 @@ session_start();
 // Botão enviar
 if(isset($_POST['btn-entrar'])):
 	$erros = array();
-	$login = mysqli_escape_string($connect, $_POST['login']);
+	$email = mysqli_escape_string($connect, $_POST['email']);
 	$senha = mysqli_escape_string($connect, $_POST['senha']);
 
 
-	if(empty($login) or empty($senha)):
+	if(empty($email) or empty($senha)):
 		$erros[] = "<li> O campo login/senha precisa ser preenchido </li>";
 	else:
 		// 105 OR 1=1 
 	    // 1; DROP TABLE teste
 
-		$sql = "SELECT login FROM usuarios WHERE login = '$login'";
+		$sql = "SELECT email FROM usuarios WHERE email = '$email'";
 		$resultado = mysqli_query($connect, $sql);		
 
 		if(mysqli_num_rows($resultado) > 0):
-		$senha = md5($senha);       
-		$sql = "SELECT * FROM usuarios WHERE login = '$login' AND senha = '$senha'";
+		   
+		$sql = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
 
 
 
@@ -33,7 +33,6 @@ if(isset($_POST['btn-entrar'])):
 				$dados = mysqli_fetch_array($resultado);
 				mysqli_close($connect);
 				$_SESSION['logado'] = true;
-				$_SESSION['id_usuario'] = $dados['id'];
 				header('Location: hfoods.php');
 			else:
 				$erros[] = "<li> Usuário e senha não conferem </li>";
@@ -69,7 +68,7 @@ endif;
 		?>
 
 		<div class="txtb">
-			<input type="text" name="login" value="<?php echo isset($_COOKIE['login']) ? $_COOKIE['login'] : '' ?>">
+			<input type="text" name="email" value="<?php echo isset($_COOKIE['email']) ? $_COOKIE['email'] : '' ?>">
 			<span data-placeholder="Usuário"></span>
 		</div>
 
@@ -82,7 +81,7 @@ endif;
 
 		<div class="bottom-text">
 			Não possui conta?
-			<a href="registro.html">Inscrever-se</a>
+			<a href="registro.php">Inscrever-se</a>
 		</div>
 
 		<div class="bottom-text">
