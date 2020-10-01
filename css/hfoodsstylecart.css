@@ -1,0 +1,208 @@
+@font-face {
+    font-family: Luizinho;
+    src: url(../font/Butler_Regular.otf);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Luizinho', sans-serif;
+}
+
+header
+{
+    background: radial-gradient(circle, rgba(101,196,52,1) 0%, rgba(53,106,46,1) 100%);
+    height: 150px;
+    position: relative;
+}
+
+.overlay
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+nav
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 60px 0 60px;
+}
+
+nav li
+{
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span
+{
+    padding-left: 5px;
+}
+
+li a
+{
+    padding: 5px;
+    background-color: seashell;
+    text-decoration: none;
+}
+
+.carrinho ion-icon
+{
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.carrinho a
+{
+    background-color: skyblue;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#insiraProduto, .products-container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+img
+{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.image
+{
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.add-cart
+{
+    position: absolute;
+    width: 100%;
+    background-color: darkgray;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5,
+.image:hover .cart6 
+{
+    bottom: 50px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.products-container
+{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.products-container ion-icon
+{
+    font-size: 25px;
+    color: green;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.product-header
+{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid green;
+    margin: 0 auto;
+}
+
+.product-title
+{
+    width: 45%;
+}
+
+.price 
+{
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.quantity
+{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.total
+{
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.product 
+{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.products
+{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+}
+.products img
+{
+    width: 75px;
+}
+
+.imgCarrinho
+{
+    max-width: 100px;
+    max-height: 100px;
+}
