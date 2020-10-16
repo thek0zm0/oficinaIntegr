@@ -1,68 +1,100 @@
 let products =
 [
     {
-        name: 'Uva',
-        tag: 'uva',
-        type: 'Itália',
-        imagem: 'https://statics.angeloni.com.br/super/files/produtos/164224/164224_1_zoom.jpg',
+        name: 'Uvaum',
+        tag: 'uvaum',
+        fruta: 'Uva',
+        type: 'Sémillon',
+        medida: 500,
+        produtor: 'Família Medina',
+        imagem: 'images/d1.jpg',
         price: 9,
-        inCart: 0
+        inCart: 0,
+        inStock: 3
     },
     {
-        name: 'Morango',
-        tag: 'morango',
-        type: 'Albion',
-        imagem: 'https://http2.mlstatic.com/D_NQ_NP_741461-MLB31121407872_062019-W.jpg',
+        name: 'Uvadois',
+        tag: 'uvadois',
+        fruta: 'Uva',
+        type: 'Merlot',
+        medida: 500,
+        produtor: 'Família Denaro',
+        imagem: 'images/d2.jpg',
         price: 12,
-        inCart: 0
+        inCart: 0,
+        inStock: 9
     },
     {
-        name: 'Banana',
-        tag: 'banana',
-        type: 'Prata',
-        imagem: 'https://static.carrefour.com.br/medias/sys_master/images/images/h9d/hca/h00/h00/14506624450590.jpg',
-        price: 4,
-        inCart: 0
-    },
-    {
-        name: 'Framboesa',
-        tag: 'framboesa',
-        type: 'Vermelha',
-        imagem: 'https://www.dventoempolpa.com.br/wp-content/uploads/2018/10/Framboesa-1.jpg',
+        name: 'Uvatres',
+        tag: 'uvatres',
+        fruta: 'Uva',
+        type: 'Malbec',
+        medida: 300,
+        produtor: 'Família Denaro',
+        imagem: 'images/d3.jpg',
         price: 15,
-        inCart: 0
+        inCart: 0,
+        inStock: 2
     },
     {
-        name: 'Manga',
-        tag: 'manga',
+        name: 'Uvaquatro',
+        tag: 'uvaquatro',
+        fruta: 'Uva',
+        type: 'Grenache',
+        medida: 200,
+        produtor: 'Fazenda das Uvas',
+        imagem: 'images/d4.jpg',
+        price: 14,
+        inCart: 0,
+        inStock: 6
+    },
+    {
+        name: 'Morangoum',
+        tag: 'morangoum',
+        fruta: 'Morango',
+        type: 'Albion',
+        medida: 500,
+        produtor: 'Frutas da Terra',
+        imagem: 'images/d5.jpg',
+        price: 10,
+        inCart: 0,
+        inStock: 5
+    },
+    {
+        name: 'Morangodois',
+        tag: 'morangodois',
+        fruta: 'Morango',
+        type: 'Capri',
+        medida: 500,
+        produtor: 'Frutas da Terra',
+        imagem: 'images/d6.jpg',
+        price: 13,
+        inCart: 0,
+        inStock: 4
+    },
+    {
+        name: 'Mangaum',
+        tag: 'mangaum',
+        fruta: 'Manga',
         type: 'Palmer',
-        imagem: 'https://static.carrefour.com.br/medias/sys_master/images/images/h46/h3c/h00/h00/13957618860062.jpg',
-        price: 6,
-        inCart: 0
-    },
-    {
-        name: 'Maçã',
-        tag: 'maçã',
-        type: 'Granny Smith',
-        imagem: 'https://d26lpennugtm8s.cloudfront.net/stores/001/194/977/products/maca-verde11-f2675088a3817ad9c615897570128348-640-0.jpg',
+        medida: 450,
+        produtor: 'Frutas da Terra',
+        imagem: 'images/d7.jpg',
         price: 5,
-        inCart: 0
+        inCart: 0,
+        inStock: 1
     },
     {
-        name: 'Kiwi',
-        tag: 'kiwi',
-        type: 'Gold',
-        imagem: 'https://static3.tcdn.com.br/img/img_prod/450860/1116_1_20190611093621.jpg',
-        price: 11,
-        inCart: 0
-    },
-    {
-        name: 'Laranja',
-        tag: 'laranja',
-        type: 'Bahia',
-        imagem: 'https://www.macsupermercados.com.br/wp-content/uploads/2019/06/laranja-bahia.jpg',
-        price: 7,
-        inCart: 0
+        name: 'Mangadois',
+        tag: 'mangadois',
+        fruta: 'Manga',
+        type: 'Tommy',
+        medida: 650,
+        produtor: 'Fazenda Mesina',
+        imagem: 'images/d8.jpg',
+        price: 4,
+        inCart: 0,
+        inStock: 1
     }
 ]
 
@@ -73,13 +105,15 @@ if(document.getElementById('insiraProduto'))
         {
                 insiraProduto.innerHTML += 
                 `
+                <div class="${obj.fruta}" style="display: none;">
                 <div class="image">
                     <img src="${obj.imagem}" alt="uva"></img>
-                    <h3>${obj.name}</h3>
-                    <h5>${obj.type}</h5>
+                    <h3>${obj.type}</h3>
+                    <p>Peso: ${obj.medida} gramas</p>
+                    <p>Produtor: ${obj.produtor}</p>
                     <h3>R$${obj.price}</h3>
-                    <a class="add-cart cart1" href="#">Adicionar ao carrinho</a>
-                    <input type="hidden" value="15"></input>
+                    <input type="number" placeholder="1" min="0" max="${obj.inStock}"><button class="add-cart cart1">Adicionar Carrinho</button></input>
+                </div>
                 </div>
                 `
         })
@@ -93,6 +127,7 @@ for(let i=0; i< carts.length; i++) {
         totalCost(products[i]);
     });
 }
+
 
 function onLoadCartNumbers() {
     let productNumbers = localStorage.getItem('cartNumbers');
@@ -180,7 +215,8 @@ function displayCart() {
         Object.values(cartItems).map( (item, index) => {
             productContainer.innerHTML += 
             `<div class="product"><ion-icon name="close-circle"></ion-icon><img src="${item.imagem}" />
-                <span class="sm-hide">${item.name}</span>
+                <p>${item.fruta}</p>
+                <span class="sm-hide" style="display: none;" >${item.name}</span>
             </div>
             <div class="price sm-hide">R$${item.price},00</div>
             <div class="quantity">
@@ -254,7 +290,7 @@ function deleteButtons() {
 
     for(let i=0; i < deleteButtons.length; i++) {
         deleteButtons[i].addEventListener('click', () => {
-            productName = deleteButtons[i].parentElement.textContent.toLocaleLowerCase().replace(/ /g,'').trim();
+            productName = deleteButtons[i].parentElement.querySelector('span').textContent.toLocaleLowerCase().replace(/ /g,'').trim();
            
             localStorage.setItem('cartNumbers', productNumbers - cartItems[productName].inCart);
             localStorage.setItem('totalCost', cartCost - ( cartItems[productName].price * cartItems[productName].inCart));

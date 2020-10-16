@@ -21,7 +21,6 @@
 
 img
 {
-    max-width: 200px;
     max-height: 200px;
 }
 
@@ -29,6 +28,7 @@ img
 {
     margin-right: 20px;
     margin-left: 20px;
+    margin-top: 5px;
     position: relative;
     overflow: hidden;
 }
@@ -36,10 +36,8 @@ img
 .add-cart
 {
     position: absolute;
-    width: 100%;
+    width: 70%;
     background-color: darkgray;
-    transition: all 0.3s ease-in-out;
-    opacity: 0;
     cursor: pointer;
     text-align: center;
 }
@@ -51,10 +49,7 @@ img
 .image:hover .cart5,
 .image:hover .cart6 
 {
-    bottom: 50px;
-    opacity: 1;
-    padding: 10px;
-    text-decoration: none;
+    background-color: greenyellow;
 }
 
 .container-products {
@@ -232,3 +227,37 @@ img
         padding: 0;
         margin: 0 0 40px 0;
       }
+
+.buttonSelect
+{
+  margin-top: 100px;
+  padding: 3px;
+  font-size: large;
+}
+
+button p
+{
+  color: whitesmoke;
+}
+
+.buttonSelect button
+{
+  width: 100px;
+  text-align: center;
+}
+
+.typeSelect1
+{
+  position: relative;
+  background-color: purple;
+}
+.typeSelect2
+{
+  position: relative;
+  background-color: red;
+}
+.typeSelect3
+{
+  position: relative;
+  background-color: orange;
+}
