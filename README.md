@@ -2,9 +2,9 @@
 Arquivos, oficina de integração 2020 
 
 ### Integrantes do grupo 
-<p>Matheuzin ninja123 VK2020</p>
-<p>Lukinhas FaZe Clan MLG K0ZM0LL</p>
-<p>Luizito _elChapoX420_</p>
+<p>Mateus Yi Muraoka 
+<p>Lucas Rodrigues de Moraes
+<p>Luiz Miguel Naldi
 
 ![](img/bubbles.gif)
 
