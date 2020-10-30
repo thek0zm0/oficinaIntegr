@@ -4,11 +4,11 @@ let products =
         name: 'Uvaum',
         tag: 'uvaum',
         fruta: 'Uva',
-        type: 'Sémillon',
+        type: 'Uva itália',
         medida: 500,
-        produtor: 'Família Medina',
+        produtor: 'Fazenda Boa',
         imagem: 'images/d1.jpg',
-        price: 9,
+        price: 12,
         inCart: 0,
         inStock: 3
     },
@@ -16,11 +16,11 @@ let products =
         name: 'Uvadois',
         tag: 'uvadois',
         fruta: 'Uva',
-        type: 'Merlot',
+        type: 'Uva itália',
         medida: 500,
-        produtor: 'Família Denaro',
+        produtor: 'Fazenda da fartura',
         imagem: 'images/d2.jpg',
-        price: 12,
+        price: 10,
         inCart: 0,
         inStock: 9
     },
@@ -28,11 +28,11 @@ let products =
         name: 'Uvatres',
         tag: 'uvatres',
         fruta: 'Uva',
-        type: 'Malbec',
+        type: 'Uva itália',
         medida: 300,
-        produtor: 'Família Denaro',
+        produtor: 'Claúdio',
         imagem: 'images/d3.jpg',
-        price: 15,
+        price: 8,
         inCart: 0,
         inStock: 2
     },
@@ -40,11 +40,35 @@ let products =
         name: 'Uvaquatro',
         tag: 'uvaquatro',
         fruta: 'Uva',
-        type: 'Grenache',
+        type: 'Uva Merlot',
         medida: 200,
-        produtor: 'Fazenda das Uvas',
+        produtor: 'Pedro',
         imagem: 'images/d4.jpg',
-        price: 14,
+        price: 7,
+        inCart: 0,
+        inStock: 6
+    },
+    {
+        name: 'Uvacinco',
+        tag: 'uvacinco',
+        fruta: 'Uva',
+        type: 'Uva Merlot',
+        medida: 200,
+        produtor: 'João',
+        imagem: 'images/d4.jpg',
+        price: 8,
+        inCart: 0,
+        inStock: 6
+    },
+    {
+        name: 'Uvaseis',
+        tag: 'uvaseis',
+        fruta: 'Uva',
+        type: 'Uva Itália',
+        medida: 200,
+        produtor: 'Glorinha',
+        imagem: 'images/d4.jpg',
+        price: 10,
         inCart: 0,
         inStock: 6
     },
@@ -52,7 +76,7 @@ let products =
         name: 'Morangoum',
         tag: 'morangoum',
         fruta: 'Morango',
-        type: 'Albion',
+        type: 'Morango Albion',
         medida: 500,
         produtor: 'Frutas da Terra',
         imagem: 'images/d5.jpg',
@@ -64,7 +88,7 @@ let products =
         name: 'Morangodois',
         tag: 'morangodois',
         fruta: 'Morango',
-        type: 'Capri',
+        type: 'Morango Capri',
         medida: 500,
         produtor: 'Frutas da Terra',
         imagem: 'images/d6.jpg',
@@ -76,9 +100,9 @@ let products =
         name: 'Mangaum',
         tag: 'mangaum',
         fruta: 'Manga',
-        type: 'Palmer',
+        type: 'Manga Palmer',
         medida: 450,
-        produtor: 'Frutas da Terra',
+        produtor: 'Fazenda Boa',
         imagem: 'images/d7.jpg',
         price: 5,
         inCart: 0,
@@ -88,14 +112,74 @@ let products =
         name: 'Mangadois',
         tag: 'mangadois',
         fruta: 'Manga',
-        type: 'Tommy',
+        type: 'Manga Tommy',
         medida: 650,
-        produtor: 'Fazenda Mesina',
+        produtor: 'Fazenda Bom Negócio',
+        imagem: 'images/d8.jpg',
+        price: 6,
+        inCart: 0,
+        inStock: 1
+    },
+    {
+        name: 'Mangatres',
+        tag: 'mangatres',
+        fruta: 'Manga',
+        type: ' Manga Palmer',
+        medida: 350,
+        produtor: 'Zé',
+        imagem: 'images/d8.jpg',
+        price: 3,
+        inCart: 0,
+        inStock: 1
+    },
+    {
+        name: 'Mangaquatro',
+        tag: 'mangaquatro',
+        fruta: 'Manga',
+        type: 'Manga Tommy',
+        medida: 450,
+        produtor: 'Fazenda da Fartura',
         imagem: 'images/d8.jpg',
         price: 4,
         inCart: 0,
         inStock: 1
-    }
+    },
+    {
+        name: 'Produtorum',
+        tag: 'produtorum',
+        fruta: 'BomNegocio',
+        type: 'Manga Tommy',
+        medida: 250,
+        produtor: 'Fazenda Bom Negócio',
+        imagem: 'images/d8.jpg',
+        price: 6,
+        inCart: 0,
+        inStock: 1
+    },
+    {
+        name: 'Produtordois',
+        tag: 'produtordois',
+        fruta: 'BomNegocio',
+        type: 'Morango Albion',
+        medida: 250,
+        produtor: 'Fazenda Bom Negócio',
+        imagem: 'images/d8.jpg',
+        price: 5,
+        inCart: 0,
+        inStock: 1
+    },
+    {
+        name: 'Produtortres',
+        tag: 'produtortres',
+        fruta: 'BomNegocio',
+        type: 'Uva Merlot',
+        medida: 650,
+        produtor: 'Fazenda Bom Negócio',
+        imagem: 'images/d8.jpg',
+        price: 10,
+        inCart: 0,
+        inStock: 1
+    },
 ]
 
 if(document.getElementById('insiraProduto'))
@@ -107,12 +191,11 @@ if(document.getElementById('insiraProduto'))
                 `
                 <div class="${obj.fruta}" style="display: none;">
                 <div class="image">
-                    <img src="${obj.imagem}" alt="uva"></img>
                     <h3>${obj.type}</h3>
                     <p>Peso: ${obj.medida} gramas</p>
                     <p>Produtor: ${obj.produtor}</p>
                     <h3>R$${obj.price}</h3>
-                    <input type="number" placeholder="1" min="0" max="${obj.inStock}"><button class="add-cart cart1">Adicionar Carrinho</button></input>
+                    <input type="number" placeholder="1" min="0" max="${obj.inStock}"><button class="add-cart cart1">Comprar</button></input>
                 </div>
                 </div>
                 `
@@ -214,8 +297,9 @@ function displayCart() {
         productContainer.innerHTML = '';
         Object.values(cartItems).map( (item, index) => {
             productContainer.innerHTML += 
-            `<div class="product"><ion-icon name="close-circle"></ion-icon><img src="${item.imagem}" />
-                <p>${item.fruta}</p>
+            `<div class="product"><ion-icon name="close-circle"></ion-icon>
+                <p>${item.fruta}<p>
+                <p>${item.produtor}</p>
                 <span class="sm-hide" style="display: none;" >${item.name}</span>
             </div>
             <div class="price sm-hide">R$${item.price},00</div>

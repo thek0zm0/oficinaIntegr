@@ -26,6 +26,7 @@ img
 
 .image
 {
+    width: 250px;
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 5px;
@@ -235,9 +236,16 @@ img
   font-size: large;
 }
 
+.buttonSelect2
+{
+  margin-top: 100px;
+  padding: 3px;
+  font-size: large;
+}
+
 button p
 {
-  color: whitesmoke;
+  color: black;
 }
 
 .buttonSelect button

@@ -8,6 +8,7 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 
 </head>
 <body>
@@ -33,17 +34,45 @@
         </div>
     </header>
 
-    <div class="buttonSelect">
-        <h4>Selecione o produto desejado: </h4>
-        <button type="button" class="typeSelect1">
-            <p>Uva</p>
-        </button>
-        <button type="button" class="typeSelect2">
-            <p>Morango</p>
-        </button>
-        <button type="button" class="typeSelect3">
-            <p>Manga</p>
-        </button>
+    <div style="width: 100%; overflow: hidden;">
+        <div style="width: 600px; float: left;">
+            <div class="buttonSelect">
+                <h4>Selecione o produto desejado: </h4>
+                <button type="button" class="typeSelect1">
+                    <p>Uva</p>
+                </button>
+                <button type="button" class="typeSelect2">
+                    <p>Morango</p>
+                </button>
+                <button type="button" class="typeSelect3">
+                    <p>Manga</p>
+                </button>
+            </div>
+        </div>
+        <div style="margin-left: 20px;">
+            <div class="buttonSelect2">
+                <h4>Selecione o produtor desejado: </h4>
+                <button type="button" class="typeSelect4">
+                    <p>Fazenda Bom Negócio</p>
+                </button>
+            </div>
+        </div>
+   </div>
+
+    <div class="Uva" style="display: none;">
+        <div class="elfsight-app-a6d17b70-08fd-4da6-8085-99cb3c7918b7"></div>
+    </div>
+
+    <div class="Morango" style="display: none;">
+        <div class="elfsight-app-7ae2ca40-2491-46bc-8f9a-d027e1792b4f"></div>
+    </div>
+
+    <div class="Manga" style="display: none;">
+        <div class="elfsight-app-e31f18c4-a946-4cdf-b8ad-654821e4cd0d"></div>
+    </div>
+
+    <div class="BomNegocio" style="display: none;">
+        <div class="elfsight-app-d2fe00cd-010b-41a5-a04d-0263e00dc0c3"></div>
     </div>
 
     <div class="container">
@@ -71,6 +100,9 @@
             });
             $(".typeSelect3").click(function(){
                 $(".Manga").toggle();
+            });
+            $(".typeSelect4").click(function(){
+                $(".BomNegocio").toggle();
             });
         });
     </script>
